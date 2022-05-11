@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO ALL DEAR FRIENDS</title>
+    https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+   <header>
+       <nev>
+           <div class="logo">
+           photo<span>pi</span>X
+           </div>
+           <div class="menu">
+
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">Gallary</a>
+            <a href="#">contact</a>
+           </div>
+           <div class="icon">
+               <i class="fa fa-search"></i>
+               <a href="#">Login</a>
+
+           </div>
+       </nev> 
+       <section class="h-text">
+           <i  class="fa fa-camera"  id="camera"></i>
+           <h1 data-aos="fade-up">Capturing the movement that  captivate your heart.</h1>
+
+           <input type="text" name="" placeholder="search here...">
+           <button><i class="fa fa-search"></i></button>
+       </section>      
+   </header>
+   <section class="filter-gallery">
+<div class="portfolio-menu">
+    <ul>
+        <li class="active" data-filter="*">ALL</li>
+        <li data-filter=".nature">nature</li>
+        <li data-filter=".faishon">faishon</li>
+        <li data-filter=".wedding">wedding</li>
+    </ul>
+</div>
+<div class="portfolio-item">
+    <div class="item nature" data-aos="fade-left" data-aos-offset="200" data-aos-dely="100"  >
+        <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/peter-wormstetter-f35tV7VK7Kc-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item faishon" data-aos="fade-left" data-aos-offset="200" data-aos-dely="200">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\ansgar-scheffold-z_f2JrBRbOg-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item wedding" data-aos="fade-left" data-aos-offset="200" data-aos-dely="300">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\daniel-sessler-iG-5o9ybJFw-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item nature" data-aos="fade-left" data-aos-offset="200" data-aos-dely="100">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\manda-hansen-rIb4ykHGxvA-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item faishon" data-aos="fade-left" data-aos-offset="200" data-aos-dely="200">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\david-becker-cxtr3W-02Rg-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item wedding" data-aos="fade-left" data-aos-offset="200" data-aos-dely="300">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\finding-dan-dan-grinwis-O35rT6OytRo-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item nature" data-aos="zoom-in" data-aos-offset="200" data-aos-dely="100">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\finding-dan-dan-grinwis-O35rT6OytRo-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item faishon" data-aos="zoom-in" data-aos-offset="200" data-aos-dely="200">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\parsa-mahmoudi-nfi-TXXzwjI-unsplash.jpg" width="100" height="100">
+
+    </div>
+    <div class="item wedding" data-aos="zoom-in" data-aos-offset="200" data-aos-dely="300">
+        <img src="C:\Users\Nitesh Yadav\OneDrive\Documents\New folder\js tutorial\gantas-vaiciulenas-GGDuawxHUwo-unsplash.jpg" width="100" height="100">
+        </div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   </section>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+   <script type="text/javascript">
+       $('.portfolio-item').isotope({
+  // options
+  itemSelector: '.item',
+  layoutMode: 'fitRows'
+});
+      $('.portfolio-menu ul li').click(function(){
+          $('.portfolio-menu ul li').removeClass('active');
+          $(this).addClass('active');
+
+          var selector= $(this).attr('data-filter');
+          $('.portfolio-item').isotope({
+            filter:selector
+          
+      });
+      return false;
+    });
+
+   </script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+   <section class="member">
+       <div class="member-info" data-aos="zoom-in-up" data-aos-offset="200" data-aos-dely="100">
+           <h1>Our <span>Information</span></h1>
+           <p>What our member says</p>
+       </div>
+       <div class="member-card"  data-aos="zoom-in-down" data-aos-offset="200" data-aos-dely="300">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/istockphoto-1306119858-1024x1024.jpg">
+           <p>
+            “Smile, be cool, and just say, 
+            'Hey. ' That's all you have to do to create intrigue. 
+            If she's interested, she'll perk up.” Just be sure to look friendly, not scary.
+            What is a gym crush?
+Image result
+In fact, your gym crush has that near-magical 
+ability to force you to tap into those reserves of strength and energy
+ you didn't even know you had, usually around the time they walk by…
+           </p>
+           <h2>*Mariya sharapova</h2>
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/Screenshot%20(62).png"  width="100" >         
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/Screenshot%20(65).png"  width="100" >         
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/Screenshot%20(64).png"  width="100" >        
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/Screenshot%20(63).png"  width="100" >         
+
+
+       </div>
+       <div class="m-images" data-aos="zoom-in-up" data-aos-offset="200" data-aos-dely="300">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/michael-dam-mEZ3PoFGs_k-unsplash.jpg" width="250">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/oppo-iWE2gH9n8oU-unsplash.jpg" width="250">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg" width="250">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/christian-buehner-DItYlc26zVI-unsplash.jpg" width="250">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/avi-richards-cq5f6ZTMaYQ-unsplash.jpg" width="250">
+           <img src="file:///C:/Users/Nitesh%20Yadav/OneDrive/Documents/New%20folder/js%20tutorial/ayo-ogunseinde-6W4F62sN_yI-unsplash.jpg" width="250">
+
+       </div>
+   </section>
+   <footer>
+       <div class="newsletter" >
+           <div  >
+               <h2>Suscribe our newsletter</h2>
+               <p>we are a team of  non-cynics  who truly care for  our work.</p>
+           </div>
+           <div class="ntext"  >
+               <label >
+                   <input type="text"  name=" " placeholder="Enter Your Email">
+                   <button> Suscribe </button>
+               </label>
+           </div>
+       </div>
+       <div class="f-contact" >
+           <div>
+               <h1>INFORMATION</h1>
+               <P>Lorem ipsum sit amet ,consectetur elit .nikhil sit  dicta.</P>
+               <i class="fa fa-whatsapp"></i>
+               <i class="fa fa-instragram"></i>
+               <i class="fa fa-telegram"></i>
+               <i class="fa fa-twitter"></i>
+               
+           </div>
+           <div>
+               <h1>USEFUL LINK</h1>
+               <p>About us</p>
+               <p>Gallery</p>
+               <p>blog posts</p>
+               <p>principal plance</p>
+           </div>
+           <div>
+            <h1>HELP AS SUPPORT</h1>
+            <p>privacy policy</p>
+            <p>terms and condition</p>
+            <p>bcustomer care</p>
+            <p>technical support</p>
+        </div>
+        <div>
+            <h1>DETAILE</h1>
+            <p>photographers</p>
+            <p>gallery</p>
+            <p>about</p>
+            <p>princing plance</p>
+        </div>
+
+       </div>
+   </footer>
+    
+</body>
+</html>
